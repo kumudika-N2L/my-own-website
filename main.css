@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+  font-family: sans-serif;
+  margin: 0; /* Remove all body margins */
+  font-size: 120%;
+}
+nav {
+    background-color: #ffe27a;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    display: flex; /* Display the chldren of this element as flexible boxes */
+    align-items: center; /* Align child flexible boxes in the vertical center */
+    padding: 12px 24px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    position: relative;
+    color: #555;
+    overflow: hidden;
+    text-decoration: none;
+    transition: .2s ease-in;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+nav p {
+    text-align: center;
+    flex-basis: 100px; /* Give each paragraph the same basic width */
+    flex-grow: 1; /* Allow each paragraph to grow evenly to fill up the parent nav element */
+}
+nav a {
+    color: rgb(42, 1, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    background-color:rgb(147, 233, 254); /* background or background-color both work */
+    position: relative; /* fix to the viewport */
+    bottom: 0; /* Start 0 pixels from the bottom of the viewport */
+    left: 0; /* Start 0 pixels from the left of the viewport */
+    width: 100%; /* Set the width to 100% of the viewport */
+    height: 3em; /* Set the footer elements height to 3 times larger than its current font size */
+    border-top: solid black 1px; /* Have to put the unit, e.g. px or %, if not zero */
+}
+nav a:hover {
+    color: red;
+}
+Header {
+    display: flex;
+    align-items: center;
+   
+   
+}
+header h1 {
+    font-family: "Shadows Into Light";
+    font-size: 400%;
+    font-weight: lighter;
+    color: #000000;
+}
+h1,h2 {
+     color: #0132c7;
+    font-family: serif;
+}
+
+
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 4em; /* Larger margin to allow for the footer */
+}
+.center {
+    text-align: center;
+}
+.wrap {
+    float: right;
+}
+
+
+/* Define the grid container */
+.grid-container {
+  display: grid;
+  /* flex-direction: column; */
+gap: 8px; /* Gap between grid items */
+ grid-template-columns: 1fr 1fr 1fr ; /* Two columns with equal width */
+ }
+
+
+/* Style for each grid item */
+.grid-item {
+  border: 1px solid #925555;
+  padding: 8px;
+  text-align: center;
+}
+.grid-item img {
+    height: 70%; /* Ensure the image takes up 70% of its container's height */
+}
+/* Media query for screens smaller than 800 pixels */
+@media (max-width:800px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr; /* Change to a single column */
+    }
+/* Media query for screens smaller than 800 pixels */
+@media (max-width: 600px) {
+.grid-container{
+        grid-template-columns: 1fr; /* Change to a single column */
+    }    
+}
+.grid-item img{
+  width: 300px;
+ height:200px;
+}
+.gird-container img{
+ height: 70%; /* Ensure the image takes up 70% of its container's height */
+}
